@@ -7,7 +7,7 @@ class Program
         Console.Write("Can you guess the magic number? ");
         
         Random randomGenerator = new Random();
-        int number = randomGenerator.Next(1, 100);
+        int number = randomGenerator.Next(1, 101);
         
         string condition = "no";
 
