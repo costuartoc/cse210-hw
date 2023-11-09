@@ -71,6 +71,18 @@ class Program
                 string newPrompt = Console.ReadLine();
 
                 prompt1._prompts.Add($"{newPrompt}");
+                
+                string entry = Console.ReadLine();
+                
+                DateTime theCurrentTime = DateTime.Now;
+                string dateText = theCurrentTime.ToShortDateString();
+
+                Entry entry1 = new Entry();
+                entry1._date = $"{dateText}";
+                entry1._entryText = $"{entry}";
+                entry1._promptText = $"{newPrompt}";
+
+                journal1._entries.Add(entry1);
             }
 
         }
