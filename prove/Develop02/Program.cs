@@ -15,7 +15,7 @@ class Program
         Journal journal1 = new Journal();
 
         int userInput = 1;
-        while (userInput != 5)
+        while (userInput != 6)
         {
             
             Console.WriteLine("Please select one of the following choices:");
@@ -23,7 +23,8 @@ class Program
             Console.WriteLine("2. Display");
             Console.WriteLine("3. Load");
             Console.WriteLine("4. Save");
-            Console.WriteLine("5. Quit");
+            Console.WriteLine("5. Create Prompt");
+            Console.WriteLine("6. Quit");
             Console.Write("What would you like to do? ");
             
             string userResponse = Console.ReadLine();
@@ -63,6 +64,13 @@ class Program
                 string file = Console.ReadLine();
 
                 journal1.SaveToFile(file, journal1._entries);
+            }
+            else if (userInput == 5)
+            {
+                Console.WriteLine("What would you like your prompt to say?");
+                string newPrompt = Console.ReadLine();
+
+                prompt1._prompts.Add($"{newPrompt}");
             }
 
         }
