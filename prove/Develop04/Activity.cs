@@ -37,6 +37,7 @@ public class Activity
         Console.WriteLine($"You have completed another {_duration} seconds of the {_name} Activity.");
         ShowSpinner(3);
     }
+    // instead of a spinner I've done a winking face animation
     protected void ShowSpinner(int seconds)
     {
         List<string> animationStrings = new List<string>();

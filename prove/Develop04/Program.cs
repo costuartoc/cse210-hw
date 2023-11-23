@@ -1,5 +1,5 @@
 using System;
-
+// instead of a spinner I've done a winking face animation
 class Program
 {
     static void Main(string[] args)
