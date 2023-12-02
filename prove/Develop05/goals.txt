@@ -1,0 +1,5 @@
+300
+SimpleGoal:,Run,Run,10,True
+EternalGoal:,Walk,Walk,20
+ChecklistGoal:,Eat,Eat,5,50,2,2
+ChecklistGoal:,Sing,Sing in the car,10,100,5,5
